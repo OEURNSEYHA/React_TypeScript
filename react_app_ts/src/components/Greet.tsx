@@ -8,15 +8,18 @@
 //   };
 // }
 
-// Define the Greet component
-const Greet = (props : {propName:{name:string, number: number}}) => {
-  // Accessing props
+// props string or number
+// Greet(props: {name: string})
+
+
+const Greet = (props : { propName: { name: string, number: number }, great: number }) => {
+  // Destructuring props
   const { name, number } = props.propName;
 
   return (
     <div>
-      <p>Hello, {name}!</p>
-      <p>Your number is: {number}</p>
+      <p>My name is {name}!</p>
+      <p>Your number is: {number} {props.great}</p>
     </div>
   );
 }
