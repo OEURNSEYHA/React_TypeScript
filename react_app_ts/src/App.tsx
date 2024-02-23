@@ -4,7 +4,8 @@ function App() {
 
   return (
     <>
-     <Greet name="seyha"/>
+    {/* <Greet number={10}/> */}
+    <Greet propName={{"name": "seyha", "number": 10}}/>
     </>
   )
 }
