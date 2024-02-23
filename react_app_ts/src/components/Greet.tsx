@@ -1,13 +1,24 @@
-type GreetProps = {
-    name: string
-}
 
-//  Greet({name: string})
-function Greet(props : GreetProps) {
+
+// Define the type for the props
+// interface GreetProps {
+//   propName: {
+//     name: string;
+//     number: number;
+//   };
+// }
+
+// Define the Greet component
+const Greet = (props : {propName:{name:string, number: number}}) => {
+  // Accessing props
+  const { name, number } = props.propName;
+
   return (
-    <div>Greet {props.name}</div>
-  )
+    <div>
+      <p>Hello, {name}!</p>
+      <p>Your number is: {number}</p>
+    </div>
+  );
 }
 
-export default Greet
-
+export default Greet;
