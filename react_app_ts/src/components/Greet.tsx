@@ -8,18 +8,24 @@
 //   };
 // }
 
+
+type GreetProps = {
+  name : string,
+  messageCount? : number,
+  isLoggedIn: boolean
+}
+
 // props string or number
 // Greet(props: {name: string})
 
 
-const Greet = (props : { propName: { name: string, number: number }, great: number }) => {
+const Greet = (props: GreetProps) => {
   // Destructuring props
-  const { name, number } = props.propName;
-
+  const {messageCount = 0} = props
   return (
     <div>
-      <p>My name is {name}!</p>
-      <p>Your number is: {number} {props.great}</p>
+     <h1>{messageCount}</h1>
+      {props.isLoggedIn ? "Welcome" : "Welcome Guest"}
     </div>
   );
 }
