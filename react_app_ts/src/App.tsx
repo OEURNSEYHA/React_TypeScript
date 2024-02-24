@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
@@ -16,18 +17,29 @@ function App() {
       first: "Oeurn",
       last: "Seyha",
     },
-    { first: "Nona", last: "Cola" },
+    {
+      first: "Nona",
+      last: "Cola",
+    },
   ];
   return (
     <>
       {/* <Greet great={10}/> */}
       {/* <Greet propName={{ name: "seyha", number: 10 }} great={10} /> */}
       <Person name={personName} nameList={personList} />
-      <Status status="success"/>
-      <Oscar>  <Heading > Oscar goes to Leonardo Dicpario! </Heading> </Oscar>
-      <Greet  name = "seyha" isLoggedIn={false} />
-      <Button handleClick={(e, id)=>{alert(`hello${id} ${e}`)}} />
+      <Status status="success" />
+      <Oscar>
+        {" "}
+        <Heading> Oscar goes to Leonardo Dicpario! </Heading>{" "}
+      </Oscar>
+      <Greet name="seyha" isLoggedIn={false} />
+      <Button
+        handleClick={(e, id) => {
+          alert(`hello${id} ${e}`);
+        }}
+      />
 
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </>
   );
 }
