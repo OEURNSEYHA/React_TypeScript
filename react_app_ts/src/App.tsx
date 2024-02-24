@@ -5,6 +5,7 @@ import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import Status from "./components/Status";
+import Login from "./components/state/Login";
 
 function App() {
   const personName = {
@@ -40,6 +41,7 @@ function App() {
       />
 
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+        <Login/>
     </>
   );
 }
