@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
@@ -24,10 +25,8 @@ function App() {
       <Person name={personName} nameList={personList} />
       <Status status="success"/>
       <Oscar>  <Heading > Oscar goes to Leonardo Dicpario! </Heading> </Oscar>
-
-
-
-    <Greet  name = "seyha" isLoggedIn={false} />
+      <Greet  name = "seyha" isLoggedIn={false} />
+      <Button handleClick={(e, id)=>{alert(`hello${id} ${e}`)}} />
 
     </>
   );
