@@ -5,6 +5,7 @@ import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import Status from "./components/Status";
+import Counter from "./components/state/Counter";
 import Login from "./components/state/Login";
 import User from "./components/state/User";
 
@@ -44,6 +45,7 @@ function App() {
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
         <Login/>
         <User/>
+        <Counter/>
     </>
   );
 }
