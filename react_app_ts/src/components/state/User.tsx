@@ -1,10 +1,11 @@
 // import React from 'react'
-
 import { useState } from "react";
+
 type AuthUser = {
   name: string;
   email: string;
 };
+
 function User() {
   // const [user, setUser] = useState<AuthUser|null>(null);
   const [user, setUser] = useState<AuthUser>({} as AuthUser);
@@ -14,7 +15,7 @@ function User() {
       email: "seyha@gmail.com",
     });
   };
-  
+
   // const handleLogout = () => {
   //   setUser(null)
   // };

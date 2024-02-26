@@ -10,6 +10,8 @@ import Counter from "./components/state/Counter";
 import Login from "./components/state/Login";
 import User from "./components/state/User";
 import Users from "./components/context/User"
+import DomRef from "./components/ref/DomRef";
+import Multable from "./components/ref/Multable";
 
 function App() {
   const personName = {
@@ -50,6 +52,9 @@ function App() {
         <Counter/>
         <Box/>
         <Users/>
+        <DomRef/>
+
+        <Multable/>
     </>
   );
 }
