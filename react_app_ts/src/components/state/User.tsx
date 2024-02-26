@@ -14,6 +14,7 @@ function User() {
       email: "seyha@gmail.com",
     });
   };
+  
   // const handleLogout = () => {
   //   setUser(null)
   // };
@@ -24,6 +25,7 @@ function User() {
       {/* <button onClick={handleLogout}>Logout</button> */}
       <div>
         {" "}
+        {/* User name is {user?.name} <br /> Email is {user?.email} */}
         User name is {user.name} <br /> Email is {user.email}
       </div>
     </div>

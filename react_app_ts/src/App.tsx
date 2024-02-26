@@ -9,6 +9,7 @@ import Box from "./components/context/Box";
 import Counter from "./components/state/Counter";
 import Login from "./components/state/Login";
 import User from "./components/state/User";
+import Users from "./components/context/User"
 
 function App() {
   const personName = {
@@ -48,6 +49,7 @@ function App() {
         <User/>
         <Counter/>
         <Box/>
+        <Users/>
     </>
   );
 }
