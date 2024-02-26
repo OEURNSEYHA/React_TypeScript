@@ -11,7 +11,8 @@ import Login from "./components/state/Login";
 import User from "./components/state/User";
 import Users from "./components/context/User"
 import DomRef from "./components/ref/DomRef";
-import Multable from "./components/ref/Multable";
+// import Multable from "./components/ref/Multable";
+import Counters from "./components/class/Counter";
 
 function App() {
   const personName = {
@@ -54,7 +55,8 @@ function App() {
         <Users/>
         <DomRef/>
 
-        <Multable/>
+        {/* <Multable/> */}
+        <Counters message="hello"/>
     </>
   );
 }
