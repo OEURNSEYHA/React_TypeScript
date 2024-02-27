@@ -14,7 +14,10 @@ import DomRef from "./components/ref/DomRef";
 // import Multable from "./components/ref/Multable";
 import Counters from "./components/class/Counter";
 import Private from "./components/auth/Private";
-import Profile from "./components/auth/Profile"
+import Profile from "./components/auth/Profile";
+import { List } from "./components/generics/List";
+// import List from "./components/generics/List";
+
 function App() {
   const personName = {
     first: "Oeurn",
@@ -60,6 +63,12 @@ function App() {
       {/* <Profile name={"seyha"}/> */}
       <Private isLoggedIn={true} component={Profile} />
 
+      <List
+        items={["bopha", "seyha", "nona"]}
+        onClick={(item)=> console.log(item)}
+      />
+
+      {/* <List items={[1,2,4]} onClick={(item)=> console.log(item)}/> */}
     </>
   );
 }
