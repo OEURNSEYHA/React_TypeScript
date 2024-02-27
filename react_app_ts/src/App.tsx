@@ -18,6 +18,7 @@ import Profile from "./components/auth/Profile";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import Toast from "./components/templateliterals/Toast";
+import { CustomButton } from "./components/html/Button";
 // import List from "./components/generics/List";
 
 function App() {
@@ -67,15 +68,19 @@ function App() {
 
       <List
         items={["bopha", "seyha", "nona"]}
-        onClick={(item)=> console.log(item)}
+        onClick={(item) => console.log(item)}
       />
 
-      <List items={[1,2,4]} onClick={(item)=> console.log(item)}/>
+      <List items={[1, 2, 4]} onClick={(item) => console.log(item)} />
       <br />
       <h1> Restricting Props </h1>
-        <RandomNumber value={10} isPositive />
-        <h1> Toast </h1>
-        <Toast position="left-top"/>
+      <RandomNumber value={10} isPositive />
+      <h1> Toast </h1>
+      <Toast position="left-top" />
+
+      <CustomButton variant="secondary" onClick={() => console.log("Click")}>
+         Primary Button
+      </CustomButton>
     </>
   );
 }
