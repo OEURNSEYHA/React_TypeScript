@@ -16,6 +16,7 @@ import Counters from "./components/class/Counter";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 // import List from "./components/generics/List";
 
 function App() {
@@ -68,7 +69,11 @@ function App() {
         onClick={(item)=> console.log(item)}
       />
 
-      {/* <List items={[1,2,4]} onClick={(item)=> console.log(item)}/> */}
+      <List items={[1,2,4]} onClick={(item)=> console.log(item)}/>
+      <br />
+      <h1> Restricting Props </h1>
+        <RandomNumber value={10} isPositive />
+        
     </>
   );
 }
