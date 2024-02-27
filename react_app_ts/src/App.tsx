@@ -9,11 +9,12 @@ import Box from "./components/context/Box";
 import Counter from "./components/state/Counter";
 import Login from "./components/state/Login";
 import User from "./components/state/User";
-import Users from "./components/context/User"
+import Users from "./components/context/User";
 import DomRef from "./components/ref/DomRef";
 // import Multable from "./components/ref/Multable";
 import Counters from "./components/class/Counter";
-
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile"
 function App() {
   const personName = {
     first: "Oeurn",
@@ -48,15 +49,17 @@ function App() {
       />
 
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
-        <Login/>
-        <User/>
-        <Counter/>
-        <Box/>
-        <Users/>
-        <DomRef/>
+      <Login />
+      <User />
+      <Counter />
+      <Box />
+      <Users />
+      <DomRef />
+      {/* <Multable/> */}
+      <Counters message="hello" />
+      {/* <Profile name={"seyha"}/> */}
+      <Private isLoggedIn={true} component={Profile} />
 
-        {/* <Multable/> */}
-        <Counters message="hello"/>
     </>
   );
 }
