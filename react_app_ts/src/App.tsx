@@ -19,6 +19,8 @@ import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import Toast from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/Button";
+import Guest from "./components/html/Guest";
+import { CustomComponent } from "./components/html/CustomComponent";
 // import List from "./components/generics/List";
 
 function App() {
@@ -81,6 +83,10 @@ function App() {
       <CustomButton variant="secondary" onClick={() => console.log("Click")}>
          Primary Button
       </CustomButton>
+
+      <Guest name="seyha" isLoggedIn={true}/>
+
+      <CustomComponent name="nona" isLoggedIn={true}/>
     </>
   );
 }
