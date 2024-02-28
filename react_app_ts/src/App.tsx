@@ -22,7 +22,7 @@ import { CustomButton } from "./components/html/Button";
 import Guest from "./components/html/Guest";
 import { CustomComponent } from "./components/html/CustomComponent";
 // import List from "./components/generics/List";
-
+import { Text } from "./components/polymorphic/Text";
 function App() {
   const personName = {
     first: "Oeurn",
@@ -85,8 +85,12 @@ function App() {
       </CustomButton>
 
       <Guest name="seyha" isLoggedIn={true}/>
-
       <CustomComponent name="nona" isLoggedIn={true}/>
+
+
+
+      <Text as='h1' size='lg' color="secondary"> Hello  </Text>
+      <Text style={{color:"yellow"}} as='label' htmlFor="hello" id="id" size='lg' color="secondary"> Label  </Text>
     </>
   );
 }
