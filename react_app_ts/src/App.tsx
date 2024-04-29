@@ -23,6 +23,7 @@ import Guest from "./components/html/Guest";
 import { CustomComponent } from "./components/html/CustomComponent";
 // import List from "./components/generics/List";
 import { Text } from "./components/polymorphic/Text";
+import UpdateObjectArray from "./components/test/UpdateObjectArray";
 function App() {
   const personName = {
     first: "Oeurn",
@@ -41,6 +42,13 @@ function App() {
   ];
   return (
     <>
+    <UpdateObjectArray/>
+
+    <br /><br /><br />
+
+
+
+
       {/* <Greet great={10}/> */}
       {/* <Greet propName={{ name: "seyha", number: 10 }} great={10} /> */}
       <Person name={personName} nameList={personList} />
